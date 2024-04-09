@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário</title>
+    <style>
+        body{
+            background-color: rgb(216, 188, 188);
+        }
+        input{
+            display:block;
+            margin-bottom: 10px;
+        }
+        input[type="checkbox"], [type="radio"]{
+            display: inline;
+        }
+        label{
+            display: block;
+        }
+        #cidade{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="nome">Nome Completo:</label>
+            <input maxlength="40" minlength="5" id="nome" type="text" name="nome" required placeholder="nome completo">
+
+            <label for="genero">Genero:</label>
+
+            <label><input checked type="radio" value="Masculino" name="genero" id="masculino">Masculino</label>
+            <label><input type="radio" name="genero" id="feminino" value="Feminino">Feminino</label>
+            <label><input type="radio" name="genero" id="outro" value="Outro">Outro</label>
+            <label><input type="radio" name="genero" id="prefiro" value="Prefirto nao comentar">Prefiro não responder</label>
+            
+            <label for="nascimento">Data de Nascimento:</label>
+
+            <input type="date" name="data" id="data">
+    
+            <label for="email">Email: </label>
+
+            <input id="email" type="email" name="email" class="input-padrao" required placeholder="email@dominio.com">
+            
+            <label for="site">Site Pessoal: <input type="url" name="site" id="site" placeholder="www.sitepessoal.com.br"></label>
+
+            <label for="endereco">Endereço</label>
+
+            <input  type="text" id="endereco" name="endereco" class="input-padrao" required placeholder="AV., Rua, etc.">  
+            <input type="number" id="numero" name="numero"  class="input-padrao" required placeholder="número">
+            <input type="text" id="complemento" name="complemento" class="input-padrao" placeholder="complemento">
+
+            <label for="cidade">Cidade</label>
+
+            <select name="cidade" id="cidade" required>
+                <option value="">--Selecione--</option>
+                <optgroup label="Cidades">
+                    <option>Alvorada</option>
+                    <option>Canoas</option>
+                    <option>Esteio</option>
+                    <option>Gravataí</option>
+                    <option>Novo Hamburgo</option>
+                    <option>Passo Fundo</option>
+                    <option>Pelotas</option>
+                    <option>Porto Alegre</option>
+                    <option>São Leopoldo</option>                      
+                </optgroup>
+            </select>
+
+            <label for="telefone">Telefone<input type="tel" id="telefone" required placeholder="(99)9999.9999"></label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Dados do Profissionais</legend>
+            <h3>Áreas de atuação:</h3>
+            <label><input type="checkbox" name="design">Design</label>
+            <label><input type="checkbox" name="desenvolvimentofront-end">Desenvolvimento Front-end</label>
+            <label><input type="checkbox" name="desenvolvimentoback-end">Desenvolvimento Back-end</label>
+            <label><input type="checkbox" name="engenhariadesofware">Engenharia de Software</label>
+            <label><input type="checkbox" name="bancodedados">Banco de Dados</label>
+            <label><input type="checkbox" name="analisedetestes" >Análise de Testes</label>
+            <label><input type="checkbox" name="analalisedenegocios">Análise de Negócios</label>
+            <label><input type="checkbox" name="manutencao">Manutenção</label>
+
+            
+            <label for="formacao">Formação:</label>
+            <input list="formacoes" name="formacao" id="formacao">
+
+            <datalist id="formacoes">
+                <option value="Ensino Fundamental">       
+                <option value="Ensino Médio">
+                <option value="Ensino Superior">
+                <option value="Especialização">
+                <option value="Mestrado">
+                <option value="Doutorado">
+            </datalist>
+
+            <label for="mensagem">Breve histórico profissional:</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+            
+            <label for="upload">Upload do currículo vitae:</label>
+            <input type="file" id="file" name="arquivo">
+
+            <label for="disponibilidade">Disponibilidade de horas semanais:</label>
+            <input type="range" list="disponivel" name="escala" max="40" min="0" step="10">
+            <datalist id="disponivel">
+                <option>0</option>
+                <option>10</option> 
+                <option>20</option> 
+                <option>30</option> 
+                <option>40</option> 
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Agendamento de entrevista</legend>
+            <input type="date" name="data">
+            <input type="time" name="hora" id="hora">
+        </fieldset>
+
+    <input type="submit" name="enviar">
+
+    </form>
+
+</body>
+</html>

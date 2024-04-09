@@ -1,0 +1,132 @@
+table {
+    width: 600px;
+    border-collapse:collapse ;
+    border: 2px solid rgb(30, 80, 136);
+    padding:5px;
+    
+}
+
+tbody{
+    border: 2px solid rgb(30, 80, 136);
+    
+}
+td{
+    border: 2px solid rgb(30, 80, 136);
+    text-align: right;
+    
+}
+
+th{
+    border: 2px solid rgb(30, 80, 136);
+    
+}
+
+.linha1{
+    background:rgb(200, 225, 253);
+}
+
+.total {
+    width: 150px; 
+    padding: 10px;
+}
+
+.cabeçalho{
+    padding: 8px;
+    font-size: 23px;
+    color:rgb(30, 80, 136);
+    
+    
+}
+
+.produto{
+    width: 200px;
+    font-weight: 100;
+    background:rgb(200, 225, 253);
+}
+
+.preço{
+    width: 100px;
+    font-weight: 100;
+    background:rgb(200, 225, 253);
+
+}
+.quantidade {
+    width: 150px;
+    font-weight: 100;
+    background:rgb(200, 225, 253);
+}    
+
+.total{
+    width: 150px;
+    font-weight: 100;
+    background:rgb(200, 225, 253);
+
+}
+
+#banana{
+    text-align: left;
+}
+
+#jaca{
+text-align: left;
+}
+
+#maça{
+    text-align: left;
+}
+
+#morango{
+    text-align: left;
+    background:rgb(200, 225, 253);
+}
+
+#laranja{
+    text-align: left;
+}
+
+#melancia {
+        text-align: left;
+        background:rgb(200, 225, 253);
+}
+
+#limao{
+    text-align: left;
+}
+
+#bergamota{
+    text-align: left;
+    background:rgb(200, 225, 253);
+}
+
+#lima{
+    text-align: left;
+}
+
+#uva{
+    text-align: left;
+    background:rgb(200, 225, 253);
+}
+
+#abacaxi{
+    text-align: left;
+}
+
+#amora{
+    text-align: left;
+    background:rgb(200, 225, 253);
+}
+
+#pera{
+    text-align: left;
+}
+
+#janeiro{
+    text-align: left;
+    background:rgb(200, 225, 253);
+
+}
+
+#bruta{
+    text-align: left;
+    background:rgb(200, 225, 253);
+}
